@@ -1,0 +1,84 @@
+@font-face {
+  font-family: Figtree;
+  src: url("assets/fonts/Figtree-VariableFont_wght.ttf") format('truetype');
+}
+/* @font-face
+font-family: Figtree-italic
+src: url('assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype') */
+@font-face {
+  font-family: Figtree-semiBold;
+  src: url("assets/fonts/static/Figtree-SemiBold.ttf") format('truetype');
+}
+@font-face {
+  font-family: Figtree-extraBold;
+  src: url("assets/fonts/static/Figtree-ExtraBold.ttf") format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f4d04e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #card {
+  font-family: 'Figtree';
+  background-color: #fff;
+  border: 1px solid #121212;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+body #card #illustration {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+body #card #tag {
+  background-color: #f4d04e;
+  width: fit-content;
+  padding: 8px 12px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+body #card #date {
+  color: #121212;
+}
+body #card #blog-title {
+  font-size: 1.4rem;
+}
+body #card #summary {
+  color: #808080;
+}
+body #card #writer-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+body #card #writer-container #writer-avatar {
+  width: 40px;
+  height: 40px;
+}
+.semi-bold {
+  font-family: 'Figtree-semiBold';
+}
+.extra-bold {
+  font-family: 'Figtree-extraBold';
+}
+/*
+.attribution
+    font-size: 11px
+    text-align: center
+    position: relative
+    top: 50px
+
+.attribution a
+    color: hsl(228, 45%, 44%) */
