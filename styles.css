@@ -1,18 +1,14 @@
 @font-face {
-  font-family: Figtree;
-  src: url("assets/fonts/Figtree-VariableFont_wght.ttf") format('truetype');
-}
-/* @font-face
-font-family: Figtree-italic
-src: url('assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype') */
-@font-face {
-  font-family: Figtree-semiBold;
-  src: url("assets/fonts/static/Figtree-SemiBold.ttf") format('truetype');
+  font-family: 'Figtree';
+  src: url("assets/fonts/Figtree-VariableFont_wght.woff2") format('woff2');
+  font-weight: 300 900;
 }
 @font-face {
-  font-family: Figtree-extraBold;
-  src: url("assets/fonts/static/Figtree-ExtraBold.ttf") format('truetype');
+  font-family: 'Figtree-italic';
+  src: url("assets/fonts/Figtree-Italic-VariableFont_wght.woff2") format('woff2');
+  font-weight: 300 900;
 }
+/* Variables */
 * {
   margin: 0;
   padding: 0;
@@ -21,42 +17,48 @@ src: url('assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype')
 body {
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
   background-color: #f4d04e;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Figtree';
 }
 body #card {
-  font-family: 'Figtree';
+  width: 16.8rem;
+  height: 400px;
+  padding: 15px;
+  box-shadow: 7px 7px #121212;
+  border-radius: 20px;
   background-color: #fff;
   border: 1px solid #121212;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  width: 300px;
-  padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 body #card #illustration {
-  -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 body #card #tag {
   background-color: #f4d04e;
   width: fit-content;
-  padding: 8px 12px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  font-size: 0.7rem;
+  padding: 6px 10px;
+  border-radius: 3px;
+  margin-top: 5px;
 }
 body #card #date {
   color: #121212;
+  font-size: 0.7rem;
 }
 body #card #blog-title {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
 body #card #summary {
   color: #808080;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
 }
 body #card #writer-container {
   display: flex;
@@ -64,21 +66,29 @@ body #card #writer-container {
   gap: 15px;
 }
 body #card #writer-container #writer-avatar {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
+}
+body #card #writer-container #writer {
+  font-size: 0.6rem;
 }
 .semi-bold {
-  font-family: 'Figtree-semiBold';
+  font-weight: 600;
 }
 .extra-bold {
-  font-family: 'Figtree-extraBold';
+  font-weight: 900;
 }
-/*
-.attribution
-    font-size: 11px
-    text-align: center
-    position: relative
-    top: 50px
-
-.attribution a
-    color: hsl(228, 45%, 44%) */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+.attribution a {
+  color: #3e52a3;
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
