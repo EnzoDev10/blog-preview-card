@@ -1,27 +1,18 @@
 @font-face
-    font-family: Figtree
-    src: url('assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype')
-
-/* @font-face
-font-family: Figtree-italic
-src: url('assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype') */
-@font-face
-    font-family: Figtree-semiBold
-    src: url('assets/fonts/static/Figtree-SemiBold.ttf') format('truetype')
+    font-family: 'Figtree'
+    src: url('assets/fonts/Figtree-VariableFont_wght.woff2') format('woff2')
+    font-weight: 300 900
 
 @font-face
-    font-family: Figtree-extraBold
-    src: url('assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype')
+    font-family: 'Figtree-italic'
+    src: url('assets/fonts/Figtree-Italic-VariableFont_wght.woff2') format('woff2')
+    font-weight: 300 900
 
+/* Variables */
 Yellow-color = hsl(47, 88%, 63%)
 White-color = hsl(0, 0%, 100%)
-// Variables
 Grey-color = hsl(0, 0%, 50%)
 Black-color = hsl(0, 0%, 7%)
-
-border-radius(n)
-    -webkit-border-radius: n
-    border-radius: n
 
 *
     margin: 0
@@ -31,39 +22,48 @@ border-radius(n)
 body
     height: 100vh
     width: 100vw
+    overflow: hidden
     background-color: Yellow-color
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
+    font-family: 'Figtree'
 
     #card
-        font-family: 'Figtree'
+        width: 16.8rem
+        height: 400px
+        padding: 15px
+        box-shadow: 7px 7px Black-color
+        border-radius: 20px
         background-color: White-color
         border: 1px solid Black-color
-        border-radius(20px)
-        width: 300px
-        padding: 20px
         display: flex
         flex-direction: column
+        justify-content: space-around
 
         #illustration
-            border-radius(10px)
+            border-radius: 10px
 
         #tag
             background-color: Yellow-color
             width: fit-content
-            padding: 8px 12px
-            border-radius(5px)
+            font-size: 0.7rem
+            padding: 6px 10px
+            border-radius: 3px
+            margin-top: 5px
 
         #date
             color: Black-color
+            font-size: 0.7rem
 
         #blog-title
-            font-size: 1.4rem
+            font-size: 1.1rem
 
         #summary
             color: Grey-color
+            font-size: 0.7rem
+            line-height: 1.2rem
 
         #writer-container
             display: flex
@@ -71,16 +71,18 @@ body
             gap: 15px
 
             #writer-avatar
-                width: 40px
-                height: 40px
+                width: 20px
+                height: 20px
+
+            #writer
+                font-size: 0.6rem
 
 .semi-bold
-    font-family: 'Figtree-semiBold'
+    font-weight: 600
 
 .extra-bold
-    font-family: 'Figtree-extraBold'
+    font-weight: 900
 
-/*
 .attribution
     font-size: 11px
     text-align: center
@@ -88,4 +90,9 @@ body
     top: 50px
 
 .attribution a
-    color: hsl(228, 45%, 44%) */
+    color: hsl(228, 45%, 44%)
+
+
+@media screen and (min-width 768px)
+    html
+        font-size: 18px
