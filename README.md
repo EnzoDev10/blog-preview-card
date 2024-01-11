@@ -52,4 +52,4 @@ In future projects i would like to try out other preprocessors like SCSS or LESS
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [EnzoDev10](https://www.frontendmentor.io/profile/EnzoDev10)
